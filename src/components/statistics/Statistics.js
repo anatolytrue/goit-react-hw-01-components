@@ -5,8 +5,8 @@ export default function Statistics (props) {
     const { statsLabel, statsPercentage } = props;
     return (    
         <>
-            <span className="label">{ statsLabel}</span>
-            <span className="percentage">{ statsPercentage}</span>
+            <span className="label">{statsLabel}</span>
+            <span className="percentage">{statsPercentage}</span>
         </>
     )
 }
