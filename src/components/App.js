@@ -1,18 +1,24 @@
-import user from '../user.json'
-import data from '../data.json'
+import user from '../data/user.json'
+import data from '../data/data.json'
+import friends from '../data/friends.json'
+import transactions from '../data/transactions.json'
 import Section from './Section';
-import StatisticsList from './statistics/StatisticsList';
-import  Profile  from './profile/Profile'
+import StatisticsList from './Statistics/StatisticsList';
+import Profile from './Profile/Profile'
+import FriendsList from './FriendsList/FriendsList';
+import TransactionsHistory from './Transactions/TransactionsHistory';
 
 export default function App () {
   return (
     <div
       style={{
         height: '50%',
+        width: '100wh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 20,
+        fontSize: 10,
         color: '#010101'
       }}
     >
@@ -27,10 +33,18 @@ export default function App () {
           statsLikes={user.stats.likes}
         />
       </Section>
+      
       <Section title="Second task">
         <StatisticsList title="Upload stats" items={data}/>
       </Section>
 
+      <Section title="Third task">
+        <FriendsList friends={friends} />
+      </Section>
+
+      <Section title="Forth task">
+        <TransactionsHistory transactions={transactions}/>
+      </Section>
       
     </div>
   );

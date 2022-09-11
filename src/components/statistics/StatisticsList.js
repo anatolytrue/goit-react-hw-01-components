@@ -4,7 +4,7 @@ import Statistics from './Statistics'
 function StatisticsList({items}) {
     return (
         <>
-        <h2 className="title">Upload stats</h2>
+            <h2 className="title">Upload stats</h2>
 
             <ul className="stat-list">
                 {items.map(item => (
