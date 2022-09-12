@@ -3,7 +3,7 @@ import css from './Transactions.module.css'
 import TransactionsItem from './TransactionsItem'
 
 function TransactionsHistory({ transactions }) {
-    console.log(transactions)
+    // console.log(transactions)
     return (
         <table className={css.transactionTable} >
             <thead className={css.transactionHead}>
