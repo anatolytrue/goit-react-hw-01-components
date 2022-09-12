@@ -3,8 +3,8 @@ import data from '../data/data.json'
 import friends from '../data/friends.json'
 import transactions from '../data/transactions.json'
 import Section from './Section';
-import StatisticsList from './Statistics/StatisticsList';
-import Profile from './Profile/Profile'
+import StatisticsList from './statistics/StatisticsList';
+import Profile from './profile/Profile'
 import FriendsList from './FriendsList/FriendsList';
 import TransactionsHistory from './Transactions/TransactionsHistory';
 
