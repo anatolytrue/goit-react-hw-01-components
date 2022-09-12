@@ -19,7 +19,8 @@ export default function App () {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 10,
-        color: '#010101'
+        color: '#010101',
+        backgroundColor: '#f4fdff'
       }}
     >
       <Section title="First task">
