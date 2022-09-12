@@ -1,0 +1,25 @@
+.transactionTable{
+    border: 1px solid rgb(174, 173, 173);
+}
+
+.transactionHeadRow{
+    border: 1px solid rgb(174, 173, 173);
+    margin: 0;
+    padding: 0;
+}
+
+.transactionHead{
+    background-color:rgb(77, 192, 212);
+    margin: 0;
+}
+
+.transactionCell{
+    border: 1px solid grey;
+}
+
+.transactionBody{
+    border: 1px solid grey;
+}
+.cell{
+    border: 1px solid gray;
+}

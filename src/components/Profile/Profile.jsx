@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
-
+import css from './Profile.module.css'
 export default function Profile ({ userName, tag, location, avatar, statsFollowers, statsViews, statsLikes }) {
     return (
-        <div className="profile">
-                <div className="description">
+        <div className={css.profile}>
+                <div className={css.description}>
                 <img
                     src={avatar}
                         alt="User avatar"
-                        className="avatar"
+                        className={css.avatar}
                     />
                     <p className='name'>{userName}</p>
                     <p className='tag'>@{tag}</p>
                     <p className='location'>{location}</p>
                 </div>
 
-                <ul className="stats">
+                <ul className={css.stats}>
                     <li>
                         <span className="label">Followers</span>
                     <span className="quantity">{ statsFollowers}</span>
