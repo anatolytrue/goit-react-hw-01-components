@@ -3,8 +3,8 @@ import data from '../data/data.json'
 import friends from '../data/friends.json'
 import transactions from '../data/transactions.json'
 import Section from './Section';
-import StatisticsList from './statistics/StatisticsList';
-import Profile from './profile/Profile'
+import StatisticsList from './Statistics/StatisticsList';
+import Profile from './Profile/Profile'
 import FriendsList from './FriendsList/FriendsList';
 import TransactionsHistory from './Transactions/TransactionsHistory';
 
@@ -23,7 +23,7 @@ export default function App () {
         backgroundColor: '#f4fdff'
       }}
     >
-      <Section title="First task">
+      <Section title="1">
         <Profile
           userName={user.username}
           tag={user.tag}
@@ -35,15 +35,15 @@ export default function App () {
         />
       </Section>
       
-      <Section title="Second task">
+      <Section title="2">
         <StatisticsList title="Upload stats" items={data}/>
       </Section>
 
-      <Section title="Third task">
+      <Section title="3">
         <FriendsList friends={friends} />
       </Section>
 
-      <Section title="Forth task">
+      <Section title="4">
         <TransactionsHistory transactions={transactions}/>
       </Section>
       

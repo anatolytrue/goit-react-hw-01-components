@@ -18,6 +18,6 @@ Statistics.propTypes = {
 }
 
 Statistics.defaultProps = {
-  title: '',
-  label: 'format',
+    title: '',
+    label: 'format',
 };
