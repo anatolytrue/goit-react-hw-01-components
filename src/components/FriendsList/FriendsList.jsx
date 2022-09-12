@@ -2,13 +2,6 @@ import PropTypes from 'prop-types'
 import FriendsListItem from './FriendsListItem'
 import css from './FriendsList.module.css'
 
-function friendOnline(status) {
-  if (status) {
-    return '#2ECC71';
-  } else {
-    return '#E74C3C';
-  }
-}
 
 function FriendsList({ friends }) {
     return (
