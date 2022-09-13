@@ -30,10 +30,6 @@ export default function App () {
           location={user.location}
           avatar={user.avatar}
           stats={user.stats}
-
-          // statsFollowers={user.stats.followers}
-          // statsViews={user.stats.views}
-          // statsLikes={user.stats.likes}
         />
       </Section>
       
