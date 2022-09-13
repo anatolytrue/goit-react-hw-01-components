@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-import Stats from './Stats';
+// import Stats from './Stats';
 
-export default function Profile ({ userName, tag, location, avatar, stats }) {
+export default function Profile({ userName, tag, location, avatar, stats }) {
+    const { followers, views, likes } = stats;
     return (
         <div className={css.profile}>
                 <div className={css.description}>
@@ -15,8 +16,21 @@ export default function Profile ({ userName, tag, location, avatar, stats }) {
                     <p className={css.tag}>@{tag}</p>
                     <p className={css.location}>{location}</p>
                 </div>
-
-            <Stats stats={stats} />
+            <ul className={css.stats}>
+                    <li>
+                        <span className={css.label}>Followers</span>
+                    <span className={css.quantity}>{ followers}</span>
+                    </li>
+                    <li>
+                        <span className={css.label}>Views</span>
+                    <span className={css.quantity}>{ views}</span>
+                    </li>
+                    <li>
+                        <span className={css.label}>Likes</span>
+                    <span className={css.quantity}>{ likes}</span>
+                    </li>
+                </ul>
+            {/* <Stats stats={stats} /> */}
         </div>
     )
 }
